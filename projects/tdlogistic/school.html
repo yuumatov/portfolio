@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="date=no" />
+    <meta name="format-detection" content="address=no" />
+    <meta name="format-detection" content="email=no" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="./favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="preload" href="./fonts/Normalidad-Text-Regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="./fonts/Normalidad-Text-Medium.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="./fonts/Normalidad-Extended-Bold.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="./fonts/Normalidad-UltraExtended-Bold.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="./fonts/Normalidad-UltraExtended-Black.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" fetchpriority="high" as="image" href="./img/fon-hero.webp" type="image/webp" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>ТК Технология Движения – Школа</title>
+
+    <script src="https://api-maps.yandex.ru/v3/?apikey=837b2b7e-ee15-42ce-a0eb-5522b15c2ff0&lang=ru_RU"></script>
+</head>
+
+
+<body data-url="https://luchenkov.com/projects/td-logistic/">
+    <div class="page-wrapper">
+
+        <header class="header header--school">
+            <div class="container">
+                <div class="header__top">
+                    <a href="/" class="header__logo">
+                        <img src="./img/logo.svg" width="293" height="44" alt="Логотип TD" loading="lazy" />
+                        <span>Школа водителей категории&nbsp;Е</span>
+                    </a>
+                    <div class="header__contacts">
+                        <a href="mailto:school@td-logistic.ru" class="header__email">
+                            <svg class="icon">
+                                <use xlink:href="./img/sprite.svg#mail"></use>
+                            </svg>
+                            <span>school@td-logistic.ru</span>
+                        </a>
+                        <a href="tel:+74994306106" class="header__phone">
+                            <svg class="icon">
+                                <use xlink:href="./img/sprite.svg#phone"></use>
+                            </svg>
+                            <span>8 (499) 430-61-06</span>
+                        </a>
+                    </div>
+                    <button type="button" class="header__burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <div class="header-menu header-menu--school">
+            <div class="header-menu__inner">
+                <nav class="header-menu__nav">
+                    <ul class="header-menu__nav-list">
+                        <li class="header-menu__nav-item">
+                            <a href="#program" class="header-menu__nav-link">Программа</a>
+                        </li>
+                        <li class="header-menu__nav-item">
+                            <a href="#training" class="header-menu__nav-link">Как проходит обучение</a>
+                        </li>
+                        <li class="header-menu__nav-item">
+                            <a href="#about2" class="header-menu__nav-link">О курсе</a>
+                        </li>
+                        <li class="header-menu__nav-item">
+                            <a href="#cost" class="header-menu__nav-link">Стоимость</a>
+                        </li>
+                        <li class="header-menu__nav-item">
+                            <a href="#contacts" class="header-menu__nav-link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button type="button" class="btn btn-form">Обратный звонок</button>
+            </div>
+        </div>
+
+
+        <main class="main">
+
+            <section class="hero hero--school">
+                <div class="container">
+                    <h1 class="hero__title" data-aos="fade-right">Обучающий курс: профессия дальнобойщик</h1>
+                    <div class="hero__subtitle" data-aos="fade-right" data-aos-delay="150">Мы проводим <span>бесплатное обучение</span> водителей категории&nbsp;Е без опыта работы и помогаем трудоустроиться в транспортную компанию с заработком до 280 тыс. ₽</div>
+                    <a href="#form" class="btn hero__link" data-aos="fade-right" data-aos-delay="300">Записаться на курс</a>
+                </div>
+            </section>
+
+            <section class="pluses">
+                <div class="container">
+                    <div class="pluses__content">
+                        <p data-aos="fade-left" data-aos-delay="150"><span>Высокооплачиваемая</span> стабильная работа</p>
+                        <p data-aos="fade-left" data-aos-delay="300"><span>Романтика</span> путешествий по дорогам России</p>
+                        <p data-aos="fade-left" data-aos-delay="450">Дружное <span>сообщество</span> дальнобойщиков</p>
+                    </div>
+                    <img src="./img/pluses.svg" width="1592" height="182" alt="Плюсы" class="pluses__decor" loading="lazy" data-aos="fade" />
+                    <img src="./img/contacts-decor.svg" width="227" height="71" alt="Декоративные элементы" class="pluses__decor-2" loading="lazy" data-aos="fade-left" data-aos-delay="600" />
+                </div>
+            </section>
+
+            <section id="program" class="section section--bg program">
+                <div class="container">
+                    <div class="program__header">
+                        <h2 class="title program__title" data-aos="fade">Программа курса</h2>
+                        <p class="program__description" data-aos="fade" data-aos-delay="150">Курс включает теоретические знания, практические навыки и умения, необходимые для квалифицированного водителя-дальнобойщика. Программа составлена профессиональными инструкторами с опытом работы на полуприцепах более 15 лет.</p>
+                    </div>
+                    <div class="program__grid">
+                        <div class="program__item" data-aos="fade-right" data-aos-delay="150">
+                            <div class="program__item-title">
+                                Ввод <br />
+                                в профессию
+                            </div>
+                            <div class="program__item-text">Изучение ПДД, технических характеристик и особенностей обслуживания тягачей и полуприцепов, основы безопасного управления сцепными конструкциями и первой медицинской помощи, этика водителя, знакомство с навигационными системами и цифровым тахографом.</div>
+                        </div>
+                        <div class="program__item" data-aos="fade-right" data-aos-delay="300">
+                            <div class="program__item-title">
+                                Экономическое <br />
+                                управление
+                            </div>
+                            <div class="program__item-text">Методики снижения расходов топлива и обслуживание ТС, продления пробега шин и рабочего ресурса сцепления; оптимальный алгоритм переключений при разгоне и торможении на дорогах с разными характеристиками.</div>
+                        </div>
+                        <div class="program__item" data-aos="fade-right" data-aos-delay="150">
+                            <div class="program__item-title">
+                                Работа <br />
+                                с полуприцепом
+                            </div>
+                            <div class="program__item-text">Проверка ТС перед поездкой на исправность, базовое управление: вперёд, назад, повороты без сильного отклонения, парковка у погрузочной эстакады задним и боковым бортом, вождение на реальной дороге, сцепка и расцепка тягача и прицепа.</div>
+                        </div>
+                        <div class="program__item" data-aos="fade-right" data-aos-delay="300">
+                            <div class="program__item-title">
+                                Работа <br />
+                                с грузом
+                            </div>
+                            <div class="program__item-text">Нормы грузоперевозки, способы и правила безопасного и равномерного размещения и фиксации паллет, не превышающие ограничения по осям; температурные режимы для рефрижераторов, транспортировка опасных грузов.</div>
+                        </div>
+                        <div class="program__item" data-aos="fade-right" data-aos-delay="150">
+                            <div class="program__item-title">
+                                Оформление <br />
+                                документации
+                            </div>
+                            <div class="program__item-text">Заполнение договора, заявки (приложения к договору), заказ-наряда, форм ТТН, ТН, CMR, путевого листа, экспедиторской расписки. Составление актов, исковых заявлений, претензий в спорных ситуациях. Журнал записи часов.</div>
+                        </div>
+                        <div class="program__item" data-aos="fade-right" data-aos-delay="300">
+                            <div class="program__item-title">
+                                Безопасное <br />
+                                управление
+                            </div>
+                            <div class="program__item-text">Формирование навыков безаварийного вождения автопоезда и грузового автомобиля в разных дорожных ситуациях, причины заносов, приёмы маневрирования задним ходом и остановки в экстремальных сценариях, преодоление затяжных спусков и крутых подъёмов. Снижение нагрузок, риска травм, усталости.</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="training" class="section training">
+                <div class="container">
+                    <h2 class="title training__title" data-aos="fade">Как проходит обучение?</h2>
+                    <ul class="training__grid">
+                        <li class="training__item" data-aos="fade-up" data-aos-delay="150">
+                            <div class="training__item-title">Мы обучаем водителей по адресу М-8 Холмогоры, 51-й километр, 1</div>
+                            <div class="training__item-text">Теоретические знания даём в специально оборудованном классе. Занятия проходят в группах по 5–9 человек. Преподаватель расскажет о профессии, об экономичном и безопасном вождении. На занятиях разбираются конкретные ситуации.</div>
+                        </li>
+                        <li class="training__item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="training__item-title">Второй этап — обучение на площадке, знакомство с машиной</div>
+                            <div class="training__item-text">После изучения теоретической части обучения вождению на категорию Е, начинаются практические занятия. Сначала это будет площадка на нашей территории. Инструктор научит чувствовать габариты грузовика, реакцию руля, педалей газа, тормоза. Объяснит, как правильно парковаться, сцеплять и расцеплять полуприцеп.</div>
+                        </li>
+                        <li class="training__item" data-aos="fade-up" data-aos-delay="150">
+                            <div class="training__item-title">Третий этап — выезд в город, применение всех навыков на практике</div>
+                            <div class="training__item-text">После площадки обучение продолжится на дорогах общего пользования. На этом этапе стажёры овладевают основами вождения с полуприцепом. Учатся чувствовать дорогу и сцепление с покрытием при разных температурах и видах осадков. Из-за повышенной массы ТС на практике оценивают свой центр тяжести, применяют навыки экономичного и безаварийного вождения.</div>
+                        </li>
+                        <li class="training__item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="training__item-title">Завершающий этап — езда с наставником</div>
+                            <div class="training__item-text">После практики на ДОПах каждого курсанта прикрепляют к опытному водителю-наставнику и отправляют в реальные дорожные условия. Стажер под контролем профессионального дальнобойщика проезжает 3-5 тыс. км, приобретая опыт и мастерство дальнобойщика. Это уже настоящая работа водителем категории&nbsp;Е, совмещенная с обучением.</div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="about2" class="section about2">
+                <div class="container">
+                    <h2 class="title training__title-2" data-aos="fade">Работаем в России с 1999 года</h2>
+                    <div class="training__accent">
+                        <p data-aos="fade">За это время мы накопили огромный опыт, собрали и создали курс <span>Профессия водитель дальнобойщик</span>. Наша школа дальнобоя включает теорию в компьютерных классах, практику с профессиональными инструкторами и стажировку с водителем-наставником.</p>
+                        <figure class="training__decor" data-aos="fade-left" data-aos-delay="150">
+                            <img src="./img/training-img.webp" srcset="./img/training-img@2x.webp" width="841" height="351" alt="Отношение к клиентам" loading="lazy" />
+                        </figure>
+                    </div>
+
+                    <div class="training__content">
+                        <p data-aos="fade">
+                            Дальнобойщик — работа не из лёгких! <br />
+                            Управлять грузовиком с полуприцепом труднее, чем одиночным авто. Необходимо следить за сохранностью груза, правильно заполнять документы и контролировать техническое состояние машины. Курсы дальнобойщика учат основам транспортного законодательства, навыкам грамотного распределения и крепления грузов, экономичному управлению еврофурой. Новичку без опыта непросто попасть в штат престижной организации и получить в распоряжение современную фуру с прицепом.
+                        </p>
+                        <img src="./img/contacts-decor.svg" width="575" height="180" alt="Декоративные элементы" class="training__decor-2" loading="lazy" data-aos="fade-up" data-aos-delay="150" />
+                    </div>
+
+                    <div class="training__content training__content--accent" data-aos="fade-up">
+                        <p>Выпускникам курсов водителей категории&nbsp;Е <span>мы предоставляем стабильную работу в нашей компании с обновлённым автопарком и доходом до 280 тыс. рублей</span>, возможностью дальнейшего роста и выхода на международные перевозки.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="cost" class="cost">
+                <div class="container">
+                    <h2 class="title cost__title" data-aos="fade-right" data-aos-delay="150">Стоимость обучения</h2>
+                    <div class="cost__subtitle" data-aos="fade-left" data-aos-delay="300">
+                        Программа <span><b>профессиональной</b></span> школы дальнобойщиков
+                    </div>
+                    <div class="cost__text" data-aos="fade-right" data-aos-delay="450">Действуем в рамках бесплатной переподготовки</div>
+                </div>
+            </section>
+
+            <section class="section form">
+                <div class="container">
+                    <div class="form__inner">
+                        <h2 class="form__title" data-aos="fade-right" data-aos-delay="150">Стоимость курсов вождения категории&nbsp;Е СОСТАВЛЯЕТ <span>50&nbsp;000&nbsp;₽</span></h2>
+                        <div class="form__content" data-aos="fade-right" data-aos-delay="300">
+                            <div class="form__subtitle">
+                                Для соискателей <span><b>обучение бесплатно</b></span>
+                            </div>
+                            <div class="form__text">После года трудовой деятельности в нашей компании сумма полностью компенсируется</div>
+                        </div>
+                    </div>
+                    <div id="form" class="form__inner">
+                        <div class="form__docs" data-aos="fade-right" data-aos-delay="150">
+                            <div class="form__docs-title">Заполните ваши данные и мы с вами свяжемся</div>
+                            <div class="form__docs-wrap">
+                                <a href="./docs/list-documents.pdf" class="form__docs-link" target="_blank">
+                                    <svg class="icon">
+                                        <use xlink:href="./img/sprite.svg#clip"></use>
+                                    </svg>
+                                    <span>Список необходимых документов</span>
+                                </a>
+                                <a href="./docs/blank.pdf" class="form__docs-link" target="_blank">
+                                    <svg class="icon">
+                                        <use xlink:href="./img/sprite.svg#clip"></use>
+                                    </svg>
+                                    <span>Бланк заявки</span>
+                                </a>
+                            </div>
+                        </div>
+                        <form action="#" class="form__init">
+                            <input type="text" class="input form__name" name="name" placeholder="Ваше имя" required data-aos="fade-up" data-aos-delay="150" />
+                            <input type="tel" class="input" name="phone" placeholder="Ваш телефон" required data-aos="fade-up" data-aos-delay="300" />
+                            <input type="email" class="input" name="email" placeholder="Электронная почта" required data-aos="fade-up" data-aos-delay="450" />
+                            <textarea class="textarea form__message" name="message" placeholder="Дополнительная информация" data-aos="fade-up" data-aos-delay="600"></textarea>
+                            <div class="checkbox" data-aos="fade" data-aos-delay="150">
+                                <input type="checkbox" name="agreement_2" id="agreement_2" class="checkbox__input" required checked />
+                                <label for="agreement_2" class="checkbox__label">
+                                    <span class="checkbox__clone">
+                                        <svg class="icon">
+                                            <use xlink:href="./img/sprite.svg#check"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="checkbox__content">Даю согласие на обработку персональных данных</span>
+                                </label>
+                            </div>
+                            <button type="submit" class="btn form__submit" data-aos="fade" data-aos-delay="150">Оставить заявку</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contacts" class="section section--bg contacts">
+                <div class="container container--2">
+                    <h2 class="title contacts__title" data-aos="fade-in">Контакты</h2>
+                    <div class="contacts__inner">
+                        <div class="contacts__col">
+                            <div class="contacts__subtitle" data-aos="fade-left"><span>Мы всегда на связи!</span></div>
+                            <a href="tel:+74994306106" class="contacts__phone" data-aos="fade-left" data-aos-delay="100">
+                                <svg class="icon">
+                                    <use xlink:href="./img/sprite.svg#phone"></use>
+                                </svg>
+                                <span>8 (499) 430-61-06</span>
+                            </a>
+                            <a href="mailto:school@td-logistic.ru" class="contacts__email" data-aos="fade-left" data-aos-delay="200">
+                                <svg class="icon">
+                                    <use xlink:href="./img/sprite.svg#mail"></use>
+                                </svg>
+                                <span>school@td-logistic.ru</span>
+                            </a>
+                            <div class="contacts__socials">
+                                <a href="https://t.me/td_logistic" class="contacts__socials-item contacts__socials-item--telegram" data-aos="fade-left" data-aos-delay="100" target="_blank">
+                                    <svg class="icon">
+                                        <use xlink:href="./img/sprite.svg#telegram"></use>
+                                    </svg>
+                                </a>
+                                <a href="https://vk.com/td_logistic" class="contacts__socials-item contacts__socials-item--vk" data-aos="fade-left" data-aos-delay="200" target="_blank">
+                                    <svg class="icon">
+                                        <use xlink:href="./img/sprite.svg#vk"></use>
+                                    </svg>
+                                </a>
+                                <a href="https://www.youtube.com/@td_logistic" class="contacts__socials-item contacts__socials-item--youtube" data-aos="fade-left" data-aos-delay="300" target="_blank">
+                                    <svg class="icon">
+                                        <use xlink:href="./img/sprite.svg#youtube"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="contacts__col">
+                            <div class="contacts__subtitle" data-aos="fade-left" data-aos-delay="300"><a href="https://brand.td-logistic.ru/" target="_blank">td-logistic.ru</a> отвечаем за самое важное</div>
+                            <img src="./img/contacts-decor.svg" width="227" height="71" class="contacts__decor" alt="Декоративный элемент" loading="lazy" data-aos="fade-left" data-aos-delay="400" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="map">
+                <div id="map" class="map__inner"></div>
+                <div class="map__cover">Кликните для взаимодействия с картой</div>
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__content">
+                        <div class="footer__copyright">Copyright 2024 Все права защищены</div>
+                        <nav class="footer__nav">
+                            <a href="#program" class="footer__nav-item">Программа</a>
+                            <a href="#training" class="footer__nav-item">Как проходит обучение</a>
+                            <a href="#cost" class="footer__nav-item">О курсе</a>
+                            <a href="#cost" class="footer__nav-item">Стоимость</a>
+                            <a href="#contacts" class="footer__nav-item">Контакты</a>
+                        </nav>
+                    </div>
+                    <button type="button" class="btn btn-form">Оставить заявку</button>
+                </div>
+                <div class="footer__links">
+                    <a href="./docs/privacy.docx" download>Политика конфиденциальности</a>
+                    <a href="./docs/agreement.docx" download>Согласие на обработку персональных данных</a>
+                    <a href="./docs/personal.docx" download>Положение об обработке персональных данных</a>
+                </div>
+            </div>
+        </footer>
+
+        <div class="mobile-menu">
+            <a href="/" class="mobile-menu__logo">
+                <img src="./img/logo.svg" width="238" height="35" alt="Логотип TD" loading="lazy" />
+            </a>
+            <nav class="mobile-menu__nav">
+                <a href="#program" class="mobile-menu__nav-item">Программа</a>
+                <a href="#training" class="mobile-menu__nav-item">Как проходит обучение</a>
+                <a href="#cost" class="mobile-menu__nav-item">О курсе</a>
+                <a href="#cost" class="mobile-menu__nav-item">Стоимость</a>
+                <a href="#contacts" class="mobile-menu__nav-item">Контакты</a>
+            </nav>
+            <button type="button" class="btn btn-form mobile-menu__btn">Оставить заявку</button>
+            <div class="contacts__col">
+                <div class="mobile-menu__contacts-title">Контакты</div>
+                <div class="contacts__subtitle"><span>Мы всегда на связи!</span></div>
+                <a href="tel:+74994306106" class="contacts__phone">
+                    <svg class="icon">
+                        <use xlink:href="./img/sprite.svg#phone"></use>
+                    </svg>
+                    <span>8 (499) 430-61-06</span>
+                </a>
+                <a href="mailto:school@td-logistic.ru" class="contacts__email">
+                    <svg class="icon">
+                        <use xlink:href="./img/sprite.svg#mail"></use>
+                    </svg>
+                    <span>school@td-logistic.ru</span>
+                </a>
+                <div class="contacts__socials">
+                    <a href="https://t.me/td_logistic" class="contacts__socials-item contacts__socials-item--telegram" target="_blank">
+                        <svg class="icon">
+                            <use xlink:href="./img/sprite.svg#telegram"></use>
+                        </svg>
+                    </a>
+                    <a href="https://vk.com/td_logistic" class="contacts__socials-item contacts__socials-item--vk" target="_blank">
+                        <svg class="icon">
+                            <use xlink:href="./img/sprite.svg#vk"></use>
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/@td_logistic" class="contacts__socials-item contacts__socials-item--youtube" target="_blank">
+                        <svg class="icon">
+                            <use xlink:href="./img/sprite.svg#youtube"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal" class="modal">
+            <div class="modal__title">Заполните Ваши данные и мы с Вами свяжемся</div>
+            <form action="#" class="modal__form">
+                <input type="text" class="input" name="name" placeholder="Имя" required />
+                <input type="tel" class="input" name="phone" placeholder="Номер телефона" required />
+                <div class="checkbox">
+                    <input type="checkbox" name="agreement" id="agreement" class="checkbox__input" required checked />
+                    <label for="agreement" class="checkbox__label">
+                        <span class="checkbox__clone">
+                            <svg class="icon">
+                                <use xlink:href="./img/sprite.svg#check"></use>
+                            </svg>
+                        </span>
+                        <span class="checkbox__content">С <a href="./docs/agreement.docx" download>правилами</a> ознакомлен и согласен на обработку персональных данных</span>
+                    </label>
+                </div>
+                <button type="submit" class="btn modal__form-submit">Отправить</button>
+            </form>
+        </div>
+
+        <div class="cookie-notification hide">
+            <div class="cookie-notification__text">Мы используем файлы cookie для улучшения работы сайта и повышения удобства пользователей. Продолжая использовать наш сайт, вы соглашаетесь с <a href="./docs/personal.docx" download>использованием файлов cookle</a> и принимаете <a href="./docs/privacy.docx" download>условия пользовательского соглашения</a></div>
+            <button type="button" class="btn cookie-notification__btn">ОК</button>
+        </div>
+
+        <div class="success">
+            <div class="success__inner">
+                <img src="./img/success-decor.svg" class="success__decor" width="307" height="309" alt="Декоративный элемент" loading="lazy" />
+                <div class="success__title">Спасибо!</div>
+                <div class="success__subtitle">Ваше сообщение отправлено, мы Вам скоро перезвоним</div>
+                <button type="button" class="btn success__btn success-close">Вернуться на главную</button>
+            </div>
+            <button type="button" class="success__close success-close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x">
+                    <path d="M18 6 6 18" />
+                    <path d="m6 6 12 12" />
+                </svg>
+            </button>
+        </div>
+
+        <script src="./js/build.js"></script>
+
+        <script type="text/javascript">
+            (function(m, e, t, r, i, k, a) {
+                m[i] =
+                    m[i] ||
+                    function() {
+                        (m[i].a = m[i].a || []).push(arguments);
+                    };
+                m[i].l = 1 * new Date();
+                for (var j = 0; j < document.scripts.length; j++) {
+                    if (document.scripts[j].src === r) {
+                        return;
+                    }
+                }
+                (k = e.createElement(t)), (a = e.getElementsByTagName(t)[0]), (k.async = 1), (k.src = r), a.parentNode.insertBefore(k, a);
+            })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
+
+            ym(98476800, 'init', {
+                clickmap: true,
+                trackLinks: true,
+                accurateTrackBounce: true,
+            });
+        </script>
+        <noscript>
+            <div><img src="https://mc.yandex.ru/watch/98476800" style="position: absolute; left: -9999px" alt="" /></div>
+        </noscript>
+
+
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD6VS9KJ" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+
+
+    </div>
+</body>
+
+</html>
